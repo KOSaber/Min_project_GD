@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" href="./css/khadijah.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <h2 class="text-center">Welcome To Our Currency Converter</h2>
+
+    <div class="cent">
+        <form >
+        
+        <div class="form-group col-md-6">
+        <label for="exampleFormControlSelect1"> Select currency to convert ..</label>
+        <select class="form-control" id="options"><option>EUR</option></select>
+        </div>
+        <div class="form-group col-md-6">
+        <label for="exampleFormControlSelect1"> Select currency convert to ..</label>
+        <select class="form-control" id="options2"></select>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="exampleFormControlInput1">Enter number to convert ..</label>
+            <input type="number" min="0" class="form-control" id="numtocon" >
+        </div>
+        <div class="form-group col-md-6">
+            <label for="exampleFormControlInput1">Result ..</label>
+            <input class="form-control" type="text" id="output" placeholder="Number after converting is." readonly>
+        </div>
+        <div  class="form-group col-md-6">
+        <button type="button" id="submit" class="btn btn-warning" onclick="convert(document.getElementById('numtocon').value)">Convert</button>
+        </div>
+        </form>
+    </div>
+
+    <span></span>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/khadijah.js"></script>
+</body>
+
+</html>
